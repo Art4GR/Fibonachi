@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    function doFib (n){
+    var first = 0;
+    var second = 1;
+    alert("1-й фибоначчи из n= "+ v + ' равен =' + first);
+    for ( var i= 0; i<=n; i++){
+
+    var third = second + first;
+    first = second;
+    second = third;
+    var shag = i + 2; //счетчик чисел из n
+    //alert( "Последовательность фибоначчи =" + first +'__число '+ shag +' до числа из n ='+v);
+    alert (shag + '-й фибоначчи из n=' + v + ' равен ='+ first);
+    }
+    return second;
+
+    }
+
+    var v = +prompt ( 'Vvedite n до какого числа считать', 3);
+    alert(doFib (v-2) );// тк 1 и 2 числа мы объявили
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
